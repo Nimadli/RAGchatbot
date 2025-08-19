@@ -6,7 +6,13 @@ readme = "README.md"
 requires-python = ">= 3.13"
 authors = [{ name = "Nimadli", email = "[email protected]" }]
 dependencies = [
+    "boto3>=1.40.12",
     # runtime deps go here, e.g. "pandas>=2.2"
+    "fastapi>=0.116.1",
+    "pydantic>=2.11.7",
+    "python-dotenv>=1.1.1",
+    "streamlit>=1.48.1",
+    "uvicorn>=0.35.0",
 ]
 
 # [tool.ruff]

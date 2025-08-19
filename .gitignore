@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Environment / credentials
+.env                   # dotenv file with AWS keys
+backend/knowledge.db   # local SQLite DB
+
+# AWS credentials (if accidentally stored locally)
+~/.aws/credentials
+~/.aws/config
+
+# Logs
+*.log
