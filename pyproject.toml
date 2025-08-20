@@ -9,6 +9,7 @@ dependencies = [
     "boto3>=1.40.12",
     # runtime deps go here, e.g. "pandas>=2.2"
     "fastapi>=0.116.1",
+    "markdown2>=2.5.4",
     "pydantic>=2.11.7",
     "python-dotenv>=1.1.1",
     "streamlit>=1.48.1",
@@ -26,3 +27,9 @@ extend-exclude = '^(data|reports|models|notebooks)/'
 profile = "black" # keeps isort compatible with Black
 line_length = 100
 skip_glob = ["data/**", "reports/**", "models/**", "notebooks/**"]
+
+[tool.uv.workspace]
+members = [
+    "backend",
+    "frontend",
+]
