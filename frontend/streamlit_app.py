@@ -50,6 +50,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+
 # ----------------- Helper Function -----------------
 def format_messages_for_backend(messages):
     return [
@@ -72,9 +73,7 @@ with chat_container:
 
 # ----------------- Input Form -----------------
 with st.form(key="chat_form", clear_on_submit=True):
-    user_input = st.text_input(
-        "Ask something:", key="input", label_visibility="collapsed"
-    )
+    user_input = st.text_input("Ask something:", key="input", label_visibility="collapsed")
     submitted = st.form_submit_button("Send")
 
 # ----------------- Send Message -----------------
